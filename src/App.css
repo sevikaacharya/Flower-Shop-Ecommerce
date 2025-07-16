@@ -1,0 +1,17 @@
+@import "tailwindcss";
+.Nav
+{
+    background-color: #df7d7a;
+}
+.active
+{
+    text-decoration: underline;
+}
+.active:hover:active
+{
+    color:#fccfd4
+}
+.front
+{
+    background-color: #b12c27;
+}
