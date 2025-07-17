@@ -13,6 +13,13 @@ export const addTocartSlice=createSlice({
             const{title,img,price,id,product}=action.payload;
             const unitprice = price;
             const total = unitprice * product;
+            const existingItem = state.items.find((item) => item.id === id);
+            if(existingItem)
+            {
+                alert("Already Exist  in the Cart")
+                return;
+            }
+
             state.items.push({
                 title,
                 img,

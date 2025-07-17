@@ -29,7 +29,7 @@ export const Contact = () => {
   }
   return (
     <>
-         <div className='pt-10'>
+         <div className='p-10 '>
             <div className='flex flex-col items-center para'>
                 <h1 className='text-4xl font-bold mt-4 mb-5'>Contact Us</h1>
                 <p className=''>Have a question, want to place a custom order or just say hello ? We'd love to hear from you !</p>
@@ -44,13 +44,13 @@ export const Contact = () => {
                </div>
 
                <div>
-                   <form action="" onSubmit={checkValidation}>
+                   <form action="" onSubmit={checkValidation} className='w-full max-w-md pr-10'>
                        <label htmlFor="Name">Your name</label> <br />
-                       <input type="text" placeholder='Enter your name' className='border w-150 mb-5 h-10 pl-4' onChange={(e)=>setName(e.target.value)} value={name} /> <br />
+                       <input type="text" placeholder='Enter your name' className='border w-100 mb-5 h-10 pl-4 ' onChange={(e)=>setName(e.target.value)} value={name} /> <br />
                         <label htmlFor="Email">Email</label> <br />
-                         <input type="text" placeholder='Enter your email' className='border w-150 mb-5 h-10 pl-4 '  onChange={(e)=>setEmail(e.target.value)} value={Email}   /> <br />
+                         <input type="text" placeholder='Enter your email' className='border w-100 mb-5 h-10 pl-4 '  onChange={(e)=>setEmail(e.target.value)} value={Email}   /> <br />
                         <label htmlFor="message">Message</label> <br />
-                        <textarea name="message" id="message" placeholder='Write your message' className='border w-150 h-30 pl-4'  onChange={(e)=>setMsg(e.target.value)} value={msg} ></textarea> <br />
+                        <textarea name="message" id="message" placeholder='Write your message' className='border w-100 h-30 pl-4'  onChange={(e)=>setMsg(e.target.value)} value={msg} ></textarea> <br />
                         <input type="Submit" className=' w-29 h-10 mt-5 ftr text-white rounded mb-10' />
                     </form>
                     <p>{err}</p>

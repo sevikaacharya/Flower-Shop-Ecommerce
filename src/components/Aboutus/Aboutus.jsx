@@ -2,10 +2,10 @@ import React from 'react'
 import "./about.css"
 export const Aboutus = () => {
   return (
-    <div  className='flex justify-center box '>
-      <div className=''>
+    <div  className='flex justify-center box px-10 '>
+      <div className='max-w-xl'>
       <p  className='text-center text-4xl para pt-6 pb-4 font-bold '>About Bunch & Blush</p>
-      <p className='text-center w-200 leading-9 para '>
+      <p className='text-center  mb-6 leading-9 para '>
         Welcome to Bloomnest, a cozy little flower shop where every bloom is made with care and heart.
          I'm Rina, the founder, and what started as a simple favor for a friend—arranging flowers for
           a small event—quickly blossomed into something much more meaningful. The joy on people's faces 

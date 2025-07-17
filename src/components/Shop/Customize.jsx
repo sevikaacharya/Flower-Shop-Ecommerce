@@ -2,9 +2,9 @@ import React from 'react'
 
 export const Customize = () => {
   return (
-    <div className='mt-20 h-180 ftr text-white  '>
+    <div className='mt-20 h-180 px-10 ftr text-white  '>
      <h1 className='text-center text-4xl font-bold pb-20 pt-10'>Customize Your Bouquet</h1>
-     <div className='flex justify-self-center gap-6'>
+     <div className='flex flex-col lg:flex-row justify-self-center gap-6'>
         <div>
            <Title head='Choose Your Flowers'
             des='Pick from a variety of fresh flowers like roses, lilies, tulips
@@ -19,7 +19,7 @@ export const Customize = () => {
            , and make your gift extra special with personalized notes or packaging.'
            />
         </div>
-        <img src="./customize.jpg" alt="" className='h-122  w-105' />
+        <img src="./customize.jpg" alt="" className='h-122  w-105 hidden lg:block ' />
      </div>
         
     </div>
