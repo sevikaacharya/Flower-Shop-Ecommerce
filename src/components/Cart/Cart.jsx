@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
+
 import { useSelector,useDispatch } from 'react-redux'
-import { handleTotalde ,handleTotalIn} from '../../slice/addTocartSlice'
+import { handleTotalde ,handleTotalIn,removeItem} from '../../slice/addTocartSlice'
 export const Cart = () => {
   const addIntable=useSelector((state)=>state.itemsInCart.items)
   const[total,setTotal]=useState(0)
@@ -26,7 +27,7 @@ export const Cart = () => {
             {
               addIntable.map(item => (
               <tbody className='border-b '>
-               <td>delete</td>
+               <td onClick={()=>dispatch(removeItem({id:item.id}))}>delete</td>
                <td className='py-4'>{item.title}</td>
                <td className='py-4'><img src={item.img} className='w-20 flex justify-self-center' /></td>
                 <td className='py-4'>${item.price}</td>

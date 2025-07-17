@@ -22,6 +22,11 @@ export const addTocartSlice=createSlice({
                 price:total
             });
         },
+        removeItem:(state,action)=>
+        {
+            const id=action.payload.id;
+            state.items=state.items.filter((item=>item.id!==id));
+        },
         handleTotalde:(state,action)=>
         {
             const foundItem=state.items.find(item=>item.id===action.payload.id);
@@ -46,5 +51,5 @@ export const addTocartSlice=createSlice({
         }
     }
 })
-export const {addIncart,handleTotalde,handleTotalIn}=addTocartSlice.actions;
+export const {addIncart,handleTotalde,handleTotalIn,removeItem}=addTocartSlice.actions;
 export default addTocartSlice.reducer;
